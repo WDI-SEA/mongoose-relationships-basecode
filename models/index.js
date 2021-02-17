@@ -14,3 +14,5 @@ mongoose.connection.once('open', () =>
 mongoose.connection.on('error', err => console.log('🔥 Connection failed!', err))
 
 module.exports.BlogPost = require('./blogPost.js');
+module.exports.Order = require('./order');
+module.exports.Product = require('./product');
